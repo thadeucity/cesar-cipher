@@ -30,10 +30,33 @@ A Node.js API created with Typescript to encrypt text with the Cesar Cipher and 
 Encryption Cracking Example:
 
 Input:
-"ym3.ltmplmlxu55xqlxmyndlxu55xqlxmyndlxu55xqlxmyndlym3.ltmplmlxu55xqlxmynl8t04qlrxqqoql8m4l8tu5qlm4l4z08clmzplq7q3.8tq3ql5tm5lym3.l8qz5dlym3.l8qz5dlym3.l8qz5dlq7q3.8tq3ql5tm5lym3.l8qz5l5tqlxmynl8m4l463ql50ls0cltqlr0xx08qpltq3l50l4ot00xl0zqlpm.dl4ot00xl0zqlpm.dl4ot00xl0zqlpm.dltqlr0xx08qpltq3l50l4ot00xl0zqlpm.l8tuotl8m4lmsmuz45l5tql36xq4ccc"
+"ym3.ltmplmlxu55xqlxmyndlxu55
+  xqlxmyndlxu55xqlxmyndlym3.l
+  tmplmlxu55xqlxmynl8t04qlrxq
+  qoql8m4l8tu5qlm4l4z08clmzpl
+  q7q3.8tq3ql5tm5lym3.l8qz5dl
+  ym3.l8qz5dlym3.l8qz5dlq7q3.
+  8tq3ql5tm5lym3.l8qz5l5tqlxm
+  ynl8m4l463ql50ls0cltqlr0xx0
+  8qpltq3l50l4ot00xl0zqlpm.dl
+  4ot00xl0zqlpm.dl4ot00xl0zql
+  pm.dltqlr0xx08qpltq3l50l4ot
+  00xl0zqlpm.l8tuotl8m4lmsmuz
+  45l5tql36xq4ccc"
 
 Output:
-"mary had a little lamb, little lamb, little lamb, mary had a little lamb whose fleece was white as snow. and everywhere that mary went, mary went, mary went, everywhere that mary went the lamb was sure to go. he followed her to school one day, school one day, school one day, he followed her to school one day which was against the rules..."
+"mary had a little lamb,
+ little lamb, little lamb,
+ mary had a little lamb
+ whose fleece was white as snow.
+ and everywhere that mary went,
+ mary went, mary went, everywhere
+ that mary went the lamb was sure
+ to go. he followed her to school
+ one day, school one day, school
+ one day, he followed her to
+ school one day which was against
+ the rules..."
 ```
 
 This project is a work in progress and will receive more advanced features in the future.
