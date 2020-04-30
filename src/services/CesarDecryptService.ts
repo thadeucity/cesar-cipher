@@ -1,14 +1,12 @@
+import { alphabet } from '../libs/consts'; // possible chars
+
 interface Request {
   text: string;
+  frequencySorted: string[];
 }
 
 class CesarEncryptService {
-  public execute({ text }: Request): string {
-    const alphabet = ' abcdefghijklmnopqrstuvwxyz0123456789.,:;!?-()'.split(''); // possible characters
-    const englishLetterFrequency = ' etaoinshrdlcumwfgypbvkjxqz0123456789.,:;!?-()'.split(
-      '',
-    ); // most frequent letters in english text
-
+  public execute({ text, frequencySorted }: Request): string {
     const alphabetObject: Record<string, number> = {};
 
     // PART 1 - Create an object to hold how many times each encrypted letter appeared.
@@ -40,6 +38,9 @@ class CesarEncryptService {
       }
     }
 
+    console.log(mostFrequentChars);
+    console.log(frequencySorted);
+
     // Part 3 - Create an array of possible results and possible passwords;
 
     const totalTests = mostFrequentChars.length * 5; // To test for the 6 most common letters;
@@ -52,7 +53,7 @@ class CesarEncryptService {
       if (i % 5 === 0 && i > 0) j++; // change the frequent char
       const password =
         alphabet.indexOf(mostFrequentChars[j]) -
-        alphabet.indexOf(englishLetterFrequency[i - j * i]);
+        alphabet.indexOf(frequencySorted[i - j * i]);
 
       // Part 3.2 - Decrypt the text with one possible password
       const decryptedTextArray = textArray.map(char => {
@@ -69,7 +70,7 @@ class CesarEncryptService {
       // Part 3.3 - Calculate how many points the decrypted text made (less is better)
       const decryptedTextPoints = decryptedTextArray.reduce(
         (accumulator, currentValue) => {
-          return accumulator + englishLetterFrequency.indexOf(currentValue);
+          return accumulator + frequencySorted.indexOf(currentValue);
         },
         0,
       );

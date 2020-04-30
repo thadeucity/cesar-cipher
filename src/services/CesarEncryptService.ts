@@ -1,3 +1,5 @@
+import { alphabet } from '../libs/consts';
+
 interface Request {
   text: string;
   password: number;
@@ -5,9 +7,7 @@ interface Request {
 
 class CesarEncryptService {
   public execute({ text, password }: Request): string {
-    const alphabet = ' abcdefghijklmnopqrstuvwxyz0123456789.,:;!?-()'.split(''); //
-
-    const textArray = text.toLowerCase().split('');
+    const textArray = text.split('');
 
     const encryptedTextArray = textArray.map(char => {
       const charIndex = alphabet.indexOf(char);
