@@ -57,6 +57,7 @@ This project was developed with the following technologies:
 - [x] ASCII and ANSI printable characters full support;
 
 ### Encrypters, Decrypters and Crackers for the following Ciphers:
+
 - [ ] Atbash
 - [ ] Rail-fence
 - [ ] Baconian
